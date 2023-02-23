@@ -1,0 +1,167 @@
+:root{
+    Soft blue: hsl(215, 51%, 70%)
+    Cyan: hsl(178, 100%, 50%)
+    Very dark blue (main BG): hsl(217, 54%, 11%)
+    Very dark blue (card BG): hsl(216, 50%, 16%)
+    Very dark blue (line): hsl(215, 32%, 27%)
+    White: hsl(0, 0%, 100%)
+}
+
+body{
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4rem;
+    transition: all 220ms ease-in-out;
+    margin-bottom: 0;
+    color: hsl(178, 100%, 50%); 
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68; 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+    scale: 1;
+}
+
+h1:hover{
+    scale: 1.1;
+}
+    
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    width: 18rem;
+    height: 36rem;
+    border-radius: 15px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    box-shadow: 1px 20px 0px 18px rgba(0, 0, 0, 0.2);
+    transition: all 200ms ease-in-out;
+    scale: 0.9;
+}
+
+.card:hover{
+    scale: 1;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+.vision{
+
+    position: relative;
+    bottom: 10rem;
+    left: 7.5rem;
+    margin: 0;
+}
+
+
+.descripcion a{
+    color: hsl(178, 100%, 50%);
+    margin-bottom: 0;
+    margin-top: 0;
+    text-decoration: none;
+    
+}
+
+.descripcion p{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin-top: 0;
+    
+}
+
+.equilibrio{
+    display: flex;
+    width: 17rem;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.equilibrio:hover{
+    filter:brightness(150%);
+    cursor: pointer;
+}
+
+.equilibrio::selection{
+    transform: scale(3.5);
+}
+
+.precio{
+    display: flex;
+    gap: 5.5rem;
+    margin: 0 auto;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    border-bottom: solid 0.1px hsla(215, 52%, 70%, 0.349);
+}
+
+.precio p:last-child{
+    color: hsl(215, 51%, 70%);
+}
+
+.autor{
+    display: flex;
+    color: hsl(215, 51%, 70%);
+    margin: 1rem 0;
+    font-size: 600;
+}
+
+.autor img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0.8rem;
+}
+
+.autor a{
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
+
+footer{
+    font-size: 1.1rem;
+    color: hsl(215, 51%, 70%);
+    text-align: center;
+    
+    
+}
+
+@media screen and (min-width:0px) and (max-width: 700px) {
+    
+h1{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.container-card{
+    transition: all 200ms ease-in-out;
+    transform: scale(0.8);
+    margin-top: 0;
+    position: relative;
+    bottom: 3rem;
+}
+
+.container-card:hover{
+    scale: 1;
+}
+
+footer{
+    position: relative;
+    bottom: 6rem;
+}
+}
